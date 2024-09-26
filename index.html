@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="./static/css/hbd.css">
     <title>🎂HBD🎂</title>
 </head>
@@ -15,6 +16,15 @@
             <div class="bd__description">조금만~~~~ 기다려!</div>
 
         </div>
+        <script>
+            function setRealViewportHeight() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        window.addEventListener('resize', setRealViewportHeight);
+        window.addEventListener('load', setRealViewportHeight);
+        </script>
         <script src="./static/script/script.js"></script>
 </body>
 </html>
