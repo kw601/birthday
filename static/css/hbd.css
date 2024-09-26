@@ -8,6 +8,7 @@
 html {
     padding: 0;
     margin: 0;
+    /* background-color: black; */
 }
 body {
     padding: 0;
@@ -16,6 +17,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
+    background-repeat: no-repeat;
+    background-size : cover;
+
 }
 .birthday {
     display: flex;
@@ -24,17 +29,20 @@ body {
     flex-direction: column;
     gap: 2rem;
 }
-.bd__title {
+.bd__title, .bd__description{
     text-align: center;
-    font-size: 2rem;
     font-family: 'Dokrip';
-    background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
-    -webkit-background-clip: text;
-    color: transparent;
+    /* background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
+    -webkit-background-clip: text; */
+    /* color: transparent; */
+    color: black;
+    font-weight: 900;
+    font-size: 1.6rem;
 
-  font-weight: bold;
-  font-size: 40px;
+}
 
+.bd__description {
+    font-size: 2rem;
 }
 .bd__img {
     object-fit: contain;
