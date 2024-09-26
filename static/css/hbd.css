@@ -14,12 +14,14 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
     background-repeat: no-repeat;
     background-size : cover;
+    overflow: hidden;
 
 }
 .birthday {
